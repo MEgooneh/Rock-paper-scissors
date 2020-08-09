@@ -1,14 +1,5 @@
 
-@font-face {
-  font-family: Vazir;
-  src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.eot');
-  src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
-       url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.woff2') format('woff2'),
-       url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.woff') format('woff'),
-       url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir-Bold.ttf') format('truetype');
-  font-weight: bold;
-}
-
+@import url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css');
 body {
     background : #24272E ; 
 }
