@@ -17,13 +17,16 @@ function win(user , computer) {
     userScore_html.innerHTML = userScore ; 
     switch(user + computer){
         case "pr":
-            result_div.innerHTML = "کاغذ ، سنگ رو پوشوند ؛ تو بردی !" ;
+            result_div.innerHTML = "کاغذ ، سنگ رو پوشوند ؛ تو بردی ! 🔥" ;
+            paper_div.innerHTML.style.borderColor = "lightgreen" ; 
             break ; 
         case "rs":
-             result_div.innerHTML = "سنگ ، قیچی رو شکوند ؛ تو بردی !" ;
+             result_div.innerHTML = "سنگ ، قیچی رو شکوند ؛ تو بردی ! 🔥" ;
+             rock_div.innerHTML.style.borderColor = "lightgreen" ; 
             break ; 
         case "sp":
-            result_div.innerHTML = "قیچی ، کاغذ رو پاره کرد ؛ تو بردی !" ;
+            result_div.innerHTML = "قیچی ، کاغذ رو پاره کرد ؛ تو بردی ! 🔥" ;
+            scissors_div.innerHTML.style.borderColor = "lightgreen" ; 
             break ; 
     }
     }
@@ -32,18 +35,28 @@ function lose(user , computer){
     computerScore_html.innerHTML = computerScore ;
     switch(user + computer){
         case "rp":
-            result_div.innerHTML = "کاغذ ، سنگ رو پوشوند ؛ تو باختی !" ;
+            result_div.innerHTML = "کاغذ ، سنگ رو پوشوند ؛ تو باختی ! 💀" ;
             break ; 
         case "sr":
-             result_div.innerHTML = "سنگ ، قیچی رو شکوند ؛ تو باختی !" ;
+             result_div.innerHTML = "سنگ ، قیچی رو شکوند ؛ تو باختی ! 💀" ;
             break ; 
         case "ps":
-            result_div.innerHTML = "قیچی ، کاغذ رو پاره کرد ؛ تو باختی !" ;
+            result_div.innerHTML = "قیچی ، کاغذ رو پاره کرد ؛ تو باختی ! 💀" ;
             break ; 
     }
 }
 function draw(user , computer){
-
+ switch(user + computer){
+        case "rr":
+            result_div.innerHTML = "سنگ ،به سنگ خورد ؛ مساوی شد !" ;
+            break ; 
+        case "ss":
+              result_div.innerHTML = "قیچی ،به قیچی خورد ؛ مساوی شد !" ;
+            break ; 
+        case "pp":
+             result_div.innerHTML = "کاغذ ،به کاغذ خورد ؛ مساوی شد !" ;
+            break ; 
+    }
 }
 function game(userChoice){
     const comChoice = random() ; 
