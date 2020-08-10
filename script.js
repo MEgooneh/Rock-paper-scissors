@@ -18,17 +18,15 @@ function win(user , computer) {
     switch(user + computer){
         case "pr":
             result_div.innerHTML = "کاغذ ، سنگ رو پوشوند ؛ تو بردی ! 🔥" ;
-            paper_div.innerHTML.style.borderColor = "lightgreen" ; 
             break ; 
         case "rs":
              result_div.innerHTML = "سنگ ، قیچی رو شکوند ؛ تو بردی ! 🔥" ;
-             rock_div.innerHTML.style.borderColor = "lightgreen" ; 
             break ; 
         case "sp":
             result_div.innerHTML = "قیچی ، کاغذ رو پاره کرد ؛ تو بردی ! 🔥" ;
-            scissors_div.innerHTML.style.borderColor = "lightgreen" ; 
             break ; 
     }
+    document.getElementById(user).classList.add('green-glow'); 
     }
 function lose(user , computer){
     computerScore++ ; 
