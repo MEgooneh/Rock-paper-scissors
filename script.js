@@ -1,5 +1,5 @@
-const userScore = 0 ; 
-const computerScore = 0 ; 
+let userScore = 0 ; 
+let computerScore = 0 ; 
 const userScore_html = document.getElementById("user-score");
 const computerScore_html = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".score-board");
@@ -12,23 +12,34 @@ function random(){
     const ranNum = Math.floor(Math.random()*3) ;
     return  choices[ranNum] ; 
 }
+function win() {
+    userScore++ ;
+    userScore_html.innerHTML = userScore ; 
+    }
+function lose(){
+    computerScore++ ; 
+    computerScore_html.innerHTML = computerScore ;
+}
+function draw(){
+
+}
 function game(userChoice){
     const comChoice = random() ; 
     switch(comChoice + userChoice){
         case "rp" :
         case "ps" :
         case "sr" :
-            console.log("win!") ; 
+            win() ;  
             break ; 
         case "rs" :
         case "sp" :
         case "pr" :
-            console.log("lose!") ;
+            lose() ; 
             break ; 
         case "rr" :
         case "pp" :
         case "ss" :
-            console.log("draw!") ; 
+            draw() ; 
             break ; 
     }    
 }
