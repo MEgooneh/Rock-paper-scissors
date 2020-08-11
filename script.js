@@ -27,6 +27,7 @@ function win(user , computer) {
             break ; 
     }
     document.getElementById(user).classList.add('green-glow'); 
+    setTimeout(function(){ document.getElementById(user).classList.remove('green-glow');} , 3000);
     }
 function lose(user , computer){
     computerScore++ ; 
