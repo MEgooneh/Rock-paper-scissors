@@ -27,7 +27,7 @@ function win(user , computer) {
             break ; 
     }
     document.getElementById(user).classList.add('green-glow'); 
-    setTimeout(function(){ document.getElementById(user).classList.remove('green-glow');} , 3000);
+    setTimeout(function(){ document.getElementById(user).classList.remove('green-glow');} , 2000);
     }
 function lose(user , computer){
     computerScore++ ; 
@@ -43,6 +43,8 @@ function lose(user , computer){
             result_div.innerHTML = "قیچی ، کاغذ رو پاره کرد ؛ تو باختی ! 💀" ;
             break ; 
     }
+    document.getElementById(user).classList.add('red-glow'); 
+    setTimeout(function(){ document.getElementById(user).classList.remove('red-glow');} , 2000);
 }
 function draw(user , computer){
  switch(user + computer){
@@ -56,6 +58,8 @@ function draw(user , computer){
              result_div.innerHTML = "کاغذ ،به کاغذ خورد ؛ مساوی شد !" ;
             break ; 
     }
+    document.getElementById(user).classList.add('grey-glow'); 
+    setTimeout(function(){ document.getElementById(user).classList.remove('grey-glow');} , 2000);
 }
 function game(userChoice){
     const comChoice = random() ; 
