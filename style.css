@@ -55,6 +55,25 @@ header {
     margin : 50px 0 ;
     text-align:center;
 }
+.help{
+    margin-right: 10px;
+    padding : 10px;
+    text-align: center;
+}
+.square{
+    width: 50px ;
+    height: 50px ;
+    border-radius: 4px;  
+    color : white;
+    margin : auto ;
+    display : inline-block;
+}
+.square > p{
+    margin : auto ;
+   text-align: center;
+    vertical-align: middle;
+    line-height: 45px; 
+}
 .choice{
     border : 4px solid white ;
     border-radius: 50% ;
