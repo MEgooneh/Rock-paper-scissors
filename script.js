@@ -91,6 +91,7 @@ function main(){
         computerScore=0;
         userScore_html.innerHTML= userScore; 
         computerScore_html.innerHTML = computerScore;
+        result_div.innerHTML = "بازی از اول شروع شد!"  ;
     })
     rock_div.addEventListener('click' , function(){
         game("r") ; 
