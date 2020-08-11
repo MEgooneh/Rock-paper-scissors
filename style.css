@@ -45,6 +45,20 @@ header {
     right : -30px ;
     top : 20px;
 }
+.reset{
+    margin : auto ;
+    text-align : center;
+    padding  : 10px;
+    width : 55px ; 
+    height: 55px;
+}
+.icon{
+    opacity:80%;
+}
+.icon:hover {
+    cursor : pointer;
+    opacity:100%;
+}
 .result{
     text-align : center ;
     color : white;

@@ -7,6 +7,7 @@ const result_div = document.querySelector(".result") ;
 const rock_div = document.getElementById("r") ; 
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s")  ;
+const reset_div = document.querySelector(".icon") ; 
 function random(){
     const choices=['p' , 'r' , 's'] ; 
     const ranNum = Math.floor(Math.random()*3) ;
@@ -85,6 +86,12 @@ game() ;
 
 
 function main(){
+    reset_div.addEventListener('click',function(){
+        userScore=0;
+        computerScore=0;
+        userScore_html.innerHTML= userScore; 
+        computerScore_html.innerHTML = computerScore;
+    })
     rock_div.addEventListener('click' , function(){
         game("r") ; 
     })
